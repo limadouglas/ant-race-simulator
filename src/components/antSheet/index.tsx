@@ -13,7 +13,7 @@ export const AntSheet = ({ ant, isOpen, onClose }: AntSheetProps) => {
     <Actionsheet isOpen={isOpen} onClose={onClose}>
       <Actionsheet.Content>
         <Box w="100%" h={60} px={4} justifyContent="center">
-          <Text fontSize="xl" pt={10} pb={10} bold>
+          <Text isTruncated fontSize="xl" pt={10} pb={10} bold>
             {ant?.name}
           </Text>
           <Divider mb={10} />

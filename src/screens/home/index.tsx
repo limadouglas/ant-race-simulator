@@ -54,6 +54,7 @@ export const Home = () => {
       ) : (
         <>
           <FlatList
+            showsVerticalScrollIndicator={false}
             data={ants}
             renderItem={({ item, index }) => (
               <AntCard
@@ -62,6 +63,7 @@ export const Home = () => {
                 onPress={handlerPressAntCard}
               />
             )}
+            ListFooterComponent={<Box h={10} />}
             ListHeaderComponent={<Header title="Ants" />}
           />
           <ButtonFab
