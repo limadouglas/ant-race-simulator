@@ -1,5 +1,6 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: 'https://sg-ants-test.herokuapp.com/ants'
+  baseURL: "https://sg-ants-test.herokuapp.com",
+  timeout: 60000,
 });

@@ -1,4 +1,4 @@
-import { Fab, IFabProps, Center } from "native-base";
+import { Fab, IFabProps } from "native-base";
 
 type ButtonFabProps = IFabProps & {
   label: string;
